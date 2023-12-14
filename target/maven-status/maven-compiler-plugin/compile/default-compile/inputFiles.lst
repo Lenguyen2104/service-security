@@ -1,1 +1,16 @@
 /app/src/main/java/com/security/duanspringboot/DuanSpringbootApplication.java
+/app/src/main/java/com/security/duanspringboot/repository/UserRepository.java
+/app/src/main/java/com/security/duanspringboot/dto/request/SignUpRequest.java
+/app/src/main/java/com/security/duanspringboot/service/impl/JWTServiceImpl.java
+/app/src/main/java/com/security/duanspringboot/controller/AuthenticationController.java
+/app/src/main/java/com/security/duanspringboot/service/AuthenticationService.java
+/app/src/main/java/com/security/duanspringboot/config/SecurityConfiguration.java
+/app/src/main/java/com/security/duanspringboot/entity/UserModel.java
+/app/src/main/java/com/security/duanspringboot/entity/UserRoleModel.java
+/app/src/main/java/com/security/duanspringboot/controller/UserController.java
+/app/src/main/java/com/security/duanspringboot/service/UserService.java
+/app/src/main/java/com/security/duanspringboot/service/impl/AuthenticationServiceImpl.java
+/app/src/main/java/com/security/duanspringboot/config/JwtAuthenticationFilter.java
+/app/src/main/java/com/security/duanspringboot/service/JWTService.java
+/app/src/main/java/com/security/duanspringboot/controller/AdminController.java
+/app/src/main/java/com/security/duanspringboot/service/impl/UserServiceImpl.java
