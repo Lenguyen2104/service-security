@@ -1,6 +1,9 @@
 package com.security.duanspringboot.controller;
 
+import com.security.duanspringboot.dto.request.RefreshTokenRequest;
+import com.security.duanspringboot.dto.request.SignInRequest;
 import com.security.duanspringboot.dto.request.SignUpRequest;
+import com.security.duanspringboot.dto.response.JwtAuthenticationResponse;
 import com.security.duanspringboot.entity.UserModel;
 import com.security.duanspringboot.service.AuthenticationService;
 import lombok.RequiredArgsConstructor;
@@ -20,5 +23,15 @@ public class AuthenticationController {
     @PostMapping("/signup")
     public ResponseEntity<UserModel> signup(@RequestBody SignUpRequest request) {
         return ResponseEntity.ok(authenticationService.signup(request));
+    }
+
+    @PostMapping("/signin")
+    public ResponseEntity<JwtAuthenticationResponse> signup(@RequestBody SignInRequest request) {
+        return ResponseEntity.ok(authenticationService.signIn(request));
+    }
+
+    @PostMapping("/refresh")
+    public ResponseEntity<JwtAuthenticationResponse> refresh(@RequestBody RefreshTokenRequest request) {
+        return ResponseEntity.ok(authenticationService.refreshToken(request));
     }
 }
